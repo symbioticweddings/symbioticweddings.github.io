@@ -47,5 +47,38 @@
 	</div>
 
 	<script src="script.js"></script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const images = document.querySelectorAll(
+    ".wedding-gallery img"
+  );
+
+  if (!("IntersectionObserver" in window) ||
+      window.matchMedia(
+        "(prefers-reduced-motion: reduce)"
+      ).matches) {
+    images.forEach(img => img.classList.add("reveal"));
+    return;
+  }
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("reveal");
+          observer.unobserve(entry.target);
+        }
+      });
+    },
+    {
+      threshold: 0.1
+    }
+  );
+
+  images.forEach(img => observer.observe(img));
+});
+</script>
+
 </body>
 </html>
