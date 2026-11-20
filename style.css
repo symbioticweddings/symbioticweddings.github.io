@@ -154,8 +154,12 @@ main {
 }
 
 main h2 {
-  color: #ffffff;
-  text-shadow: 0 3px 25px rgba(0,0,0,0.3);
+    color: #ffffff;
+    font-size: clamp(38px, 4.5vw, 68px);
+    font-weight: 400;
+    line-height: 1.1;
+    letter-spacing: -1px;
+    text-shadow: 0 3px 25px rgba(0,0,0,0.3);
 }
 
 main p {
@@ -992,4 +996,14 @@ nav a:hover {
     font-size: 14px;
     padding: 22px 0;
   }
+}
+/* SYMBIOTIC — HERO TEXT POSITION */
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 6vh;
+    box-sizing: border-box;
 }
