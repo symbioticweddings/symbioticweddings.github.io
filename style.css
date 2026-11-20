@@ -1064,3 +1064,9 @@ main {
     padding: 13px 24px;
   }
 }
+/* CENTER HERO IMAGE ON MOBILE */
+@media (max-width: 768px) {
+  main {
+    background-position: 35% center;
+  }
+}
