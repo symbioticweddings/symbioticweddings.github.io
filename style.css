@@ -1306,3 +1306,26 @@ html {
     transform: scale(1.015);
   }
 }
+
+/* SYMBIOTIC - CINEMATIC GALLERY */
+
+.wedding-gallery img {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 1.2s ease,
+    transform 1.2s ease;
+}
+
+.wedding-gallery img.reveal {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .wedding-gallery img {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+}
