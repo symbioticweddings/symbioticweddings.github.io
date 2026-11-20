@@ -1007,3 +1007,37 @@ main {
     padding-bottom: 6vh;
     box-sizing: border-box;
 }
+/* MOBILE HERO REFINEMENT */
+@media (max-width: 768px) {
+
+  main {
+    min-height: 85svh;
+    padding: 60px 6% 90px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    text-align: center;
+    background-position: 43% center;
+  }
+
+  main h2 {
+    font-size: clamp(34px, 9vw, 48px);
+    line-height: 1.12;
+    max-width: 100%;
+    margin-bottom: 18px;
+  }
+
+  main p {
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 1.8;
+    margin-bottom: 28px;
+  }
+
+  main a {
+    font-size: 10px;
+    padding: 14px 25px;
+    letter-spacing: 2px;
+  }
+}
