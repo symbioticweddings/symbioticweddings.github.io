@@ -1041,3 +1041,26 @@ main {
     letter-spacing: 2px;
   }
 }
+/* MOBILE HERO FINAL ADJUSTMENT */
+@media (max-width: 768px) {
+  main {
+    padding-bottom: 55px;
+  }
+
+  main h2 {
+    font-size: clamp(30px, 7.5vw, 38px);
+    line-height: 1.15;
+    margin-bottom: 14px;
+  }
+
+  main p {
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    line-height: 1.7;
+    margin-bottom: 20px;
+  }
+
+  main a {
+    padding: 13px 24px;
+  }
+}
