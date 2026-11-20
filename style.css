@@ -1289,3 +1289,20 @@ main {
     line-height: 1.9;
   }
 }
+
+/* SMOOTH GALLERY EXPERIENCE */
+
+html {
+  scroll-behavior: smooth;
+}
+
+.wedding-gallery img {
+  transition: transform 0.8s ease,
+              opacity 0.8s ease;
+}
+
+@media (hover: hover) {
+  .wedding-gallery img:hover {
+    transform: scale(1.015);
+  }
+}
