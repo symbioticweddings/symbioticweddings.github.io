@@ -149,7 +149,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Replace with your business WhatsApp number.
   // Format: 60123456789 (without +, spaces or dashes).
-  const phoneNumber = "0198697789";
+  const phoneNumber = "60198697789";
 
   const message =
     "Hi Symbiotic Photography! I'm interested " +
