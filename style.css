@@ -1067,6 +1067,6 @@ main {
 /* CENTER HERO IMAGE ON MOBILE */
 @media (max-width: 768px) {
   main {
-    background-position: 35% center;
+    background-position: 40% center;
   }
 }
