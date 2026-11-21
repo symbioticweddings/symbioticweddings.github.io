@@ -1,0 +1,326 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Enquire | Symbiotic Weddings</title>
+  <meta name="description" content="Tell us about your wedding or event. Enquire with Symbiotic Photography.">
+
+  <style>
+    :root {
+      --bg: #171717;
+      --text: #f4f0e9;
+      --muted: #aaa49b;
+      --line: #494640;
+      --accent: #cbb79b;
+    }
+
+    * { box-sizing: border-box; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: Arial, sans-serif;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    .container {
+      max-width: 760px;
+      margin: auto;
+      padding: 35px 24px 100px;
+    }
+
+    .topbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+      padding-bottom: 65px;
+    }
+
+    .brand {
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      color: var(--text);
+      text-decoration: none;
+    }
+
+    .back {
+      color: var(--muted);
+      font-size: 11px;
+      letter-spacing: 2px;
+      text-decoration: none;
+    }
+
+    .eyebrow {
+      color: var(--accent);
+      font-size: 11px;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      font-family: Georgia, serif;
+      font-size: clamp(48px, 8vw, 78px);
+      font-weight: 400;
+      line-height: 1.08;
+      letter-spacing: -2px;
+      margin: 22px 0;
+    }
+
+    .intro {
+      max-width: 510px;
+      color: var(--muted);
+      font-size: 15px;
+      line-height: 1.9;
+      margin-bottom: 55px;
+    }
+
+    .section-title {
+      font-size: 11px;
+      letter-spacing: 3px;
+      color: var(--accent);
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+      margin: 45px 0 28px;
+    }
+
+    .field { margin-bottom: 26px; }
+
+    label {
+      display: block;
+      font-size: 12px;
+      letter-spacing: 1px;
+      margin-bottom: 12px;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 16px;
+      border: 1px solid var(--line);
+      border-radius: 0;
+      background: #222;
+      color: var(--text);
+      font: inherit;
+      font-size: 14px;
+      outline: none;
+    }
+
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--accent);
+    }
+
+    textarea {
+      min-height: 125px;
+      resize: vertical;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 22px;
+    }
+
+    .submit {
+      width: 100%;
+      padding: 21px;
+      margin-top: 25px;
+      border: 1px solid var(--accent);
+      background: var(--accent);
+      color: #171717;
+      font-size: 12px;
+      font-weight: bold;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: .3s ease;
+    }
+
+    .submit:hover {
+      background: transparent;
+      color: var(--accent);
+    }
+
+    .note {
+      text-align: center;
+      color: var(--muted);
+      font-size: 12px;
+      line-height: 1.8;
+      margin-top: 20px;
+    }
+
+    footer {
+      text-align: center;
+      color: var(--muted);
+      font-size: 10px;
+      letter-spacing: 2px;
+      margin-top: 90px;
+    }
+
+    @media (max-width: 600px) {
+      .container { padding: 25px 20px 65px; }
+      .topbar { padding-bottom: 55px; }
+      .brand { font-size: 11px; letter-spacing: 2px; }
+      .grid { grid-template-columns: 1fr; gap: 0; }
+      h1 { letter-spacing: -1px; }
+    }
+  </style>
+</head>
+
+<body>
+  <main class="container">
+    <nav class="topbar">
+      <a class="brand" href="index.html">SYMBIOTIC.</a>
+      <a class="back" href="index.html">← BACK TO HOME</a>
+    </nav>
+
+    <div class="eyebrow">The Beginning of Something Beautiful</div>
+    <h1>Tell Us<br>Your Story.</h1>
+
+    <p class="intro">
+      Every celebration has a story worth remembering.
+      Share a little about your special day, and let's
+      create something timeless together.
+    </p>
+
+    <form id="inquiryForm">
+
+      <div class="section-title">01 / PERSONAL DETAILS</div>
+
+      <div class="grid">
+        <div class="field">
+          <label for="name">YOUR NAME *</label>
+          <input id="name" required placeholder="Full name">
+        </div>
+
+        <div class="field">
+          <label for="phone">WHATSAPP NUMBER *</label>
+          <input id="phone" type="tel" required placeholder="+60">
+        </div>
+      </div>
+
+      <div class="section-title">02 / YOUR CELEBRATION</div>
+
+      <div class="grid">
+        <div class="field">
+          <label for="event">EVENT TYPE *</label>
+          <select id="event" required>
+            <option value="">Select event</option>
+            <option>Nikah</option>
+            <option>Sanding</option>
+            <option>Nikah & Sanding</option>
+            <option>Engagement</option>
+            <option>Corporate Event</option>
+            <option>Other Event</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="date">EVENT DATE *</label>
+          <input id="date" type="date" required>
+        </div>
+      </div>
+
+      <div class="field">
+        <label for="venue">EVENT VENUE / LOCATION *</label>
+        <input id="venue" required placeholder="e.g. Johor Bahru, Johor">
+      </div>
+
+      <div class="section-title">03 / YOUR COLLECTION</div>
+
+      <div class="grid">
+        <div class="field">
+          <label for="coverage">COVERAGE *</label>
+          <select id="coverage" required>
+            <option value="">Select coverage</option>
+            <option>Photography</option>
+            <option>Videography</option>
+            <option>Photography + Videography</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label for="package">PREFERRED COLLECTION</label>
+          <select id="package">
+            <option value="">Not sure yet</option>
+            <option>Gold — 5 Hours</option>
+            <option>Platinum — 9 Hours</option>
+            <option>Custom Coverage / Event</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="section-title">04 / ADDITIONAL DETAILS</div>
+
+      <div class="field">
+        <label for="notes">TELL US MORE ABOUT YOUR DAY</label>
+        <textarea id="notes" placeholder="Anything else you'd like us to know?"></textarea>
+      </div>
+
+      <button class="submit" type="submit">
+        SEND INQUIRY VIA WHATSAPP ↗
+      </button>
+
+      <p class="note">
+        Your inquiry will open in WhatsApp with a prepared message.
+        Please press Send in WhatsApp to complete your inquiry.
+        All bookings are subject to availability.
+      </p>
+
+    </form>
+
+    <footer>
+      © SYMBIOTIC PHOTOGRAPHY — STORIES WORTH REMEMBERING
+    </footer>
+  </main>
+
+  <script>
+    // Replace with your existing WhatsApp number.
+    // Format: country code + number, without + or spaces.
+    const WHATSAPP_NUMBER = "60198697789";
+
+    document.getElementById("inquiryForm")
+      .addEventListener("submit", function(e) {
+        e.preventDefault();
+
+        const get = id =>
+          document.getElementById(id).value.trim();
+
+        if (!/^601\d{8,9}$/.test(WHATSAPP_NUMBER)) {
+          alert("WhatsApp number has not been configured.");
+          return;
+        }
+
+        const message = [
+          "*NEW INQUIRY — SYMBIOTIC PHOTOGRAPHY*",
+          "",
+          "*PERSONAL DETAILS*",
+          "Name: " + get("name"),
+          "WhatsApp: " + get("phone"),
+          "",
+          "*EVENT DETAILS*",
+          "Event: " + get("event"),
+          "Date: " + get("date"),
+          "Venue: " + get("venue"),
+          "",
+          "*COLLECTION*",
+          "Coverage: " + get("coverage"),
+          "Package: " + (get("package") || "Not sure yet"),
+          "",
+          "*ADDITIONAL NOTES*",
+          get("notes") || "None",
+          "",
+          "Hi Symbiotic! I'd love to enquire about your availability."
+        ].join("\n");
+
+        const url = "https://wa.me/" +
+  WHATSAPP_NUMBER +
+  "?text=" + encodeURIComponent(message);
+
+        window.location.href = url;
+      });
+  </script>
+</body>
+</html>
