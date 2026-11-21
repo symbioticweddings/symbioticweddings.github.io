@@ -212,7 +212,7 @@
             <option>Sanding</option>
             <option>Nikah & Sanding</option>
             <option>Engagement</option>
-            <option>Corporate Event</option>
+          
             <option>Other Event</option>
           </select>
         </div>
@@ -241,15 +241,7 @@
           </select>
         </div>
 
-        <div class="field">
-          <label for="package">PREFERRED COLLECTION</label>
-          <select id="package">
-            <option value="">Not sure yet</option>
-            <option>Gold — 5 Hours</option>
-            <option>Platinum — 9 Hours</option>
-            <option>Custom Coverage / Event</option>
-          </select>
-        </div>
+        
       </div>
 
       <div class="section-title">04 / ADDITIONAL DETAILS</div>
@@ -305,10 +297,11 @@
           "Date: " + get("date"),
           "Venue: " + get("venue"),
           "",
-          "*COLLECTION*",
-          "Coverage: " + get("coverage"),
-          "Package: " + (get("package") || "Not sure yet"),
-          "",
+          
+"*COVERAGE DETAILS*",
+"Coverage: " + get("coverage"),
+"",
+
           "*ADDITIONAL NOTES*",
           get("notes") || "None",
           "",
