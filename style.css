@@ -1351,3 +1351,27 @@ html {
 .contact .inquiry-button {
   margin-bottom: 0;
 }
+
+/* SYMBIOTIC - CONTACT BUTTON FIX */
+
+a.whatsapp-button,
+a.inquiry-button {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  width: 100% !important;
+  max-width: 360px !important;
+  min-height: 64px !important;
+
+  margin: 0 auto 14px !important;
+  padding: 18px 24px !important;
+  box-sizing: border-box !important;
+  text-align: center;
+}
+
+/* Equal spacing */
+a.inquiry-button {
+  margin-bottom: 0 !important;
+}
