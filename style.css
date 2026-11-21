@@ -1329,3 +1329,25 @@ html {
     transition: none;
   }
 }
+
+/* SYMBIOTIC — CONTACT BUTTON REFINEMENT */
+
+.contact .whatsapp-button,
+.contact .inquiry-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+
+  width: 100%;
+  max-width: 360px;
+  min-height: 64px;
+  margin: 0 auto 12px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Remove extra spacing after second button */
+.contact .inquiry-button {
+  margin-bottom: 0;
+}
